@@ -3,8 +3,8 @@
 
     <div class="banner">
       <div class="container">
-        <h1 class="logo-font">拉勾教育</h1>
-        <p>A place to share your knowledge.</p>
+        <h1 class="logo-font">test cicd with github-actions</h1>
+        <p>github to share your code.</p>
       </div>
     </div>
 
