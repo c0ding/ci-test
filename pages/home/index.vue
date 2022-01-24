@@ -3,7 +3,7 @@
 
     <div class="banner">
       <div class="container">
-        <h1 class="logo-font">test cicd with github-actions version0.1.3</h1>
+        <h1 class="logo-font">test cicd with github-actions version0.1.4</h1>
         <p>github to share your code.</p>
       </div>
     </div>
