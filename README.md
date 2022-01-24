@@ -8,8 +8,14 @@ Test Github Actions with Ci-code
 测试项目可用
 
 ```
+npm i  
 ```
-
+```
+npm run build
+```
+```
+npm run start
+```
 
 
 
