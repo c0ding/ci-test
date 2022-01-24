@@ -45,6 +45,7 @@ jobs:
         asset_content_type: application/x-tgz
 
     # 部署到服务器
+    # # wget https://github.com/c0ding/ci-test/releases/latest/download/release.tgz -O release.tgz
     - name: Deploy
       uses: appleboy/ssh-action@master
       with:
@@ -54,7 +55,7 @@ jobs:
         port: ${{ secrets.HOST_PORT }}
         script: |
           cd /root/ci-test
-          wget https://github.com/c0ding/ci-test/releases/latest/download/release.tgz -O release.tgz
+          curl https://github.com/c0ding/ci-test/releases/latest/download/release.tgz 
           tar zxvf release.tgz
           npm install --production
           pm2 reload pm2.config.json
