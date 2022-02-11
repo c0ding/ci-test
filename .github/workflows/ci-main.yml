@@ -1,8 +1,5 @@
 name: Publish And Deploy Demo
-on:
-  push:
-    tags:
-      - 'v*'
+on: workflow_dispatch
 
 jobs:
   build-and-deploy:
@@ -54,7 +51,7 @@ jobs:
         password: ${{ secrets.HOST_PASSWORD }}
         port: ${{ secrets.HOST_PORT }}
         script: |
-          cd /root/ci-test
+          cd ~/ci-test
           curl https://github.com/c0ding/ci-test/releases/latest/download/release.tgz 
           tar zxvf release.tgz
           npm install --production
