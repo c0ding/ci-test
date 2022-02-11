@@ -51,6 +51,7 @@ jobs:
         password: ${{ secrets.HOST_PASSWORD }}
         port: ${{ secrets.HOST_PORT }}
         script: |
+          mkdir ci-test
           cd ~/ci-test
           curl https://github.com/c0ding/ci-test/releases/latest/download/release.tgz 
           tar zxvf release.tgz
